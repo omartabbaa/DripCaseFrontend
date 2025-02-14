@@ -1,7 +1,44 @@
+import { Link } from 'react-router-dom';
+import { AiOutlineUser } from "react-icons/ai";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useState } from 'react';
+import logo from '../assets/logo/logoDripcase.png'
+import './Navbar.css';
+
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
-        <div>
-            <h1>Navbar</h1>
+        <div className="Navbar">
+            <Link to="/categorieën" className="nav-item">Categorieën</Link>
+            
+            <div className="logo-container">
+                <Link to="/">
+                    <img className="logo" src={logo} alt="logo" />
+                </Link>
+            </div>
+
+            <div className="nav-right">
+                <Link to="/winkelwagen" className="nav-item">
+                    <AiOutlineShoppingCart />
+                </Link>
+                
+                <div className="dropdown-container">
+                    <AiOutlineUser onClick={toggleDropdown} className="nav-item" />
+                    {isOpen && (
+                        <div className="dropdown">
+                            <div className="dropdown-list">
+                                <Link to="/inloggen">Inloggen</Link>
+                                <Link to="/aanmelden">Aanmelden</Link>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
         </div>
     )
 }   
