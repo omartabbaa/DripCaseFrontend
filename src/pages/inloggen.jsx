@@ -1,11 +1,36 @@
 import React from 'react'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo/logoDripcase.png';
 
-function About() {
+function Inloggen() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    console.log(email, password);
+  }
+
+
   return (
+    <div className="login-container">
+      <div className="logo-container">
+        <img src={logo} alt="logo" />
+      </div>
+      <div className="login-CallToAction">
+        <h1>Log in om de hoes van je dromen te kopen.</h1>
+      </div>
     <div className="about">
-      <h1>About Page</h1>
+      <input className="input" type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+      <input className="input" type="password" placeholder="Wachtwoord" value={password} onChange={(e) => setPassword(e.target.value)} />
+      <button className="button" onClick={handleLogin}>Inloggen</button>
+    </div>
+    <div className="register-container">
+      <a className="register-text">Ik heb nog geen account</a>
+      <Link to="/aanmelden" className="button">Registreer</Link>
+    </div>
     </div>
   )
 }
 
-export default About 
+export default Inloggen;
