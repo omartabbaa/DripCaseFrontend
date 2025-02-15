@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import header from '../assets/Dummy images/header.png';
 
 const Winkelwagen = () => {
 

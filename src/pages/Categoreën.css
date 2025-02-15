@@ -1,0 +1,57 @@
+.categorieen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.categorieen-title{
+    font-family: 'Inter', sans-serif;
+    width: 30%;
+    font-weight: 500;
+    font-size: 40px;
+
+
+}
+
+.categorieen-title-container{
+    padding-left: 250px;
+    margin-bottom: 70px;
+}
+
+.categorie-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+
+}
+
+.categorie-text-h3{
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.categorie-text-a{
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    max-width: 150px;
+
+    width: 100%;
+    text-decoration: none;
+  
+    padding: 10px;
+
+
+}
+
+.categorie-link{
+    text-decoration: none;
+}

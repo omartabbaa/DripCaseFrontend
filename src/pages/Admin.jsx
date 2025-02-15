@@ -20,15 +20,12 @@ function Admin() {
     }
 
     return (
-        
-            
-            <div>
-                <h1>Aanmelden</h1>
-                <a>Log in om de hoes van je dromen te kopen.</a>
-                <Link to="/Aanmelden">Aanmelden</Link>
-                <Link to="/Admin">Admin</Link>
-                <div className="register-container">
-    
+        <div>
+            <h1>Aanmelden</h1>
+            <a>Log in om de hoes van je dromen te kopen.</a>
+            <Link to="/Aanmelden">Aanmelden</Link>
+            <Link to="/Admin">Admin</Link>
+            <div className="register-container">
                 <input value={voornaam} type="text" placeholder="Voornaam" onChange={(e) => setVoornaam(e.target.value)} />
                 <input value={achternaam} type="text" placeholder="Achternaam" onChange={(e) => setAchternaam(e.target.value)} />
                 <input value={straatnaam} type="text" placeholder="Straatnaam" onChange={(e) => setStraatnaam(e.target.value)} />
@@ -38,14 +35,11 @@ function Admin() {
                 <input value={email} type="text" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
                 <input value={wachtwoord} type="password" placeholder="Wachtwoord" onChange={(e) => setWachtwoord(e.target.value)} />
                 <input value={wachtwoordHerhalen} type="password" placeholder="Wachtwoord herhalen" onChange={(e) => setWachtwoordHerhalen(e.target.value)} />
-    
                 <button onClick={handleSubmit}>Meld je aan</button>
                 <a>Ik heb al een account? <Link to="/inloggen">Inloggen</Link></a>
-                </div>
             </div>
-        )
-    }   
-    
-
+        </div>
+    )
+}
 
 export default Admin 
