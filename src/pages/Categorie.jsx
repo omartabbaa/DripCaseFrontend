@@ -23,9 +23,12 @@ const Categorie = () => {
                     </div>
                     <div className='categorie-text'>
                     <h3 className='categorie-text-title'>Samsung-hoesje</h3>
-                    <a className='categorie-text-description'>Samsung-gebruikers die stevige 
-                        bescherming nodig hebben 
-                        met een modern design.</a>
+                    <a className='mobiel-naam'>Samsung Galaxy S20</a>
+                    <a className='mobiel-hoesje-prijs'>€ 19,99</a>
+                    <a className='korting-prijs'>30%</a>
+                    </div>
+                    <div className='categorie-button-container'>
+                    <button className='Toevoegen-aan-winkelwagen'>Toevoegen aan winkelwagen</button>
                     </div>
                     
                 </Link>

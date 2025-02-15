@@ -10,12 +10,12 @@ import transparent from '../assets/Dummy images/transparent.png'
 
 const Categorieën = () => {
     return (
-        <div>
-            <header>
+        <div className='categorieen-container'>
+            <header className='categorieen-header'>
                 <img src={header} alt="header" />
             </header>
             <main>
-                <h1>Telefoonhoesjes Categorieën</h1>
+                <h1 className='categorieen-title'>Telefoonhoesjes Categorieën</h1>
 
                 <div className='categorie-container'>
                 <Link to="/">
