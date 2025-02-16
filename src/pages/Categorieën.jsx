@@ -21,71 +21,59 @@ const Categorieën = () => {
                     <h1 className='categorieen-title'>Telefoonhoesjes Categorieën</h1>
                 </div>
                 <div className='categorieen-container'>
-
-                <div className='categorie-container'>
-                <Link className='categorie-link' to="/">
-                    <div className='categorie-img-container'>
-                        <img className='categorie-img' src={Samsung} alt="Samsung" />
+                    <div className='categorie-container'>
+                        <Link className='categorie-link' to="/categorie/samsung">
+                            <div className='categorie-img-container'>
+                                <img className='categorie-img' src={Samsung} alt="Samsung" />
+                            </div>
+                            <div className='categorie-text'>
+                                <h3 className='categorie-text-h3'>Samsung-hoesje</h3>
+                                <a className='categorie-text-a'>Samsung-gebruikers die stevige bescherming nodig hebben met een modern design.</a>
+                            </div>
+                        </Link>
                     </div>
-                    <div className='categorie-text'>
-                    <h3 className='categorie-text-h3'>Samsung-hoesje</h3>
-                    <a className='categorie-text-a'>Samsung-gebruikers die stevige 
-                        bescherming nodig hebben 
-                        met een modern design.</a>
+
+                    <div className='categorie-container'>
+                        <Link className='categorie-link' to="/categorie/samsung">
+                            <div className='categorie-img-container'>
+                                <img className='categorie-img' src={Samsung} alt="Samsung" />
+                            </div>
+                            <div className='categorie-text'>
+                                <h3>Samsung-hoesje</h3>
+                                <a>Samsung-gebruikers die stevige 
+                                    bescherming nodig hebben 
+                                    met een modern design.</a>
+                            </div>
+                        </Link>
                     </div>
-                    
-                </Link>
-                </div>
 
-
-                <div className='categorie-container'>
-                <Link to="/">
-                    <div className='categorie-img-container'>
-                        <img className='categorie-img' src={Samsung} alt="Samsung" />
+                    <div className='categorie-container'>
+                        <Link to="/">
+                            <div className='categorie-img-container'>
+                                <img className='categorie-img' src={Samsung} alt="Samsung" />
+                            </div>
+                            <div className='categorie-text'>
+                                <h3>Samsung-hoesje</h3>
+                                <a>Samsung-gebruikers die stevige 
+                                    bescherming nodig hebben 
+                                    met een modern design.</a>
+                            </div>
+                        </Link>
                     </div>
-                    <div className='categorie-text'>
-                    <h3>Samsung-hoesje</h3>
-                    <a>Samsung-gebruikers die stevige 
-                        bescherming nodig hebben 
-                        met een modern design.</a>
+
+                    <div className='categorie-container'>
+                        <Link to="/">
+                            <div className='categorie-img-container'>
+                                <img className='categorie-img' src={Samsung} alt="Samsung" />
+                            </div>
+                            <div className='categorie-text'>
+                                <h3>Samsung-hoesje</h3>
+                                <a>Samsung-gebruikers die stevige 
+                                    bescherming nodig hebben 
+                                    met een modern design.</a>
+                            </div>
+                        </Link>
                     </div>
-                    
-                </Link>
-                </div>
-
-
-                <div className='categorie-container'>
-                <Link to="/">
-                    <div className='categorie-img-container'>
-                        <img className='categorie-img' src={Samsung} alt="Samsung" />
-                    </div>
-                    <div className='categorie-text'>
-                    <h3>Samsung-hoesje</h3>
-                    <a>Samsung-gebruikers die stevige 
-                        bescherming nodig hebben 
-                        met een modern design.</a>
-                    </div>
-                    
-                </Link>
-                </div>
-
-
-                <div className='categorie-container'>
-                <Link to="/">
-                    <div className='categorie-img-container'>
-                        <img className='categorie-img' src={Samsung} alt="Samsung" />
-                    </div>
-                    <div className='categorie-text'>
-                    <h3>Samsung-hoesje</h3>
-                    <a>Samsung-gebruikers die stevige 
-                        bescherming nodig hebben 
-                        met een modern design.</a>
-                    </div>
-                    
-                </Link>
-                </div>
-
-
                 </div>
             </main>
         </div>
