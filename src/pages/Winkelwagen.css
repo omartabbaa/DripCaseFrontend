@@ -48,6 +48,7 @@ padding-bottom: 25px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   
 }
 
@@ -81,6 +82,13 @@ padding-bottom: 25px;
     
     padding: 200px;
 }
+
+@media (max-width: 768px) {
+    .Winkelwagen-section {
+        padding: 0px;
+    }
+}
+
 
 .product-image-container{
     width: 300px;

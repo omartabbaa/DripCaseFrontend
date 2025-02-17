@@ -8,6 +8,10 @@ import './Winkelwagen.css';
 import { AiOutlineClose } from "react-icons/ai";
 
 const Winkelwagen = () => {
+
+
+
+    
     return (
         <section className='Winkelwagen-section'>
             <div className='winkelwagen-container'>
@@ -73,7 +77,7 @@ const Winkelwagen = () => {
                     <h2 className='totaal-prijs'>totaal-prijs   </h2>
                     <h2 className='totaal-prijs'> 200 euro</h2>
                 </div>
-                <button className='afrekenen-button'>afrekenen-button</button>
+                <button className='afrekenen-button'>Afrekenen</button>
             </div>
         </section>
     );

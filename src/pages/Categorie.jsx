@@ -9,7 +9,7 @@ const Categorie = () => {
         <section className='categorie-container-section'>
             <main className='categorie-main'>
                 <div className='categorie-container'>
-                    <Link className='categorie-link' to="/">
+                    <Link className='categorie-link' to={`/product/${id}`}>
                         <div className='categorie-content-boven-container'>
                             <div className='categorie-img-container'>
                                 <img className='categorie-img' src={Samsung} alt="Samsung" />

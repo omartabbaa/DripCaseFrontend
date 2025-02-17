@@ -13,9 +13,10 @@ import './Categoreën.css'
 const Categorieën = () => {
     return (
         <div className='categorieen-container'>
-            <header className='categorieen-header'>
-                <img src={header} alt="header" />
-            </header>
+    <header className="categorieen-header">
+  <img className="categorieen-header-img" src={header} alt="Header Image" />
+</header>
+
             <main>
                 <div className='categorieen-title-container'>
                     <h1 className='categorieen-title'>Telefoonhoesjes Categorieën</h1>

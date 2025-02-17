@@ -20,6 +20,13 @@
     margin-bottom: 70px;
 }
 
+@media (max-width: 768px) {
+    .categorieen-title-container {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 .categorie-container{
     display: flex;
     flex-direction: column;
@@ -42,16 +49,47 @@
     color: #000000;
     font-weight: 500;
     font-size: 16px;
-    max-width: 150px;
+    max-width: 360px;
 
     width: 100%;
     text-decoration: none;
   
     padding: 10px;
+    margin-top: -10px;
 
 
+}
+
+.categorie-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .categorie-link{
     text-decoration: none;
 }
+
+.categorieen-header-img {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+.categorieen-header{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .categorieen-header-img {
+      object-position: center; /* Centers the image focus */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .categorieen-header-img {
+      object-position: top; /* Focuses on the top part of the image */
+    }
+  }
+  

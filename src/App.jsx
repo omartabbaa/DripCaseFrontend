@@ -8,6 +8,8 @@ import Winkelwagen from './pages/Winkelwagen'
 import Admin from './pages/Admin'
 import NotFound from './pages/NotFound'
 import Navbar from './Components/Navbar'
+import ProductToevoegen from './pages/productToevoegen'
+import CategorieToevoegen from './pages/categorieToevoegen'
 import './App.css'
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
         <Routes>
         <Route path="/categorieën" element={<Categorieën />} />
           <Route path="/categorie/:id" element={<Categorie />} />
-         
+          <Route path="/product-toevoegen" element={<ProductToevoegen />} />
+          <Route path="/categorie-toevoegen" element={<CategorieToevoegen />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/winkelwagen" element={<Winkelwagen />} />
           <Route path="/admin" element={<Admin />} />

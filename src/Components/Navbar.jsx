@@ -21,6 +21,8 @@ const Navbar = () => {
                     <img className="logo" src={logo} alt="logo" />
                 </Link>
             </div>
+            <Link to="/product-toevoegen" className="nav-item">Product toevoegen</Link>
+            <Link to="/categorie-toevoegen" className="nav-item">Categorie toevoegen</Link>
 
             <div className="nav-right">
                 <Link to="/winkelwagen" className="nav-item">
